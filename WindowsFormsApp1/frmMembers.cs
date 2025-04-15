@@ -223,7 +223,7 @@ namespace WindowsFormsApp1
 
             SQLiteCommand cmd = new SQLiteCommand();
             cmd = conn.CreateCommand();
-            cmd.CommandText = @"SELECT Id, FirstName, LastName, Phone,NationalCode, Description from tblMembers 
+            cmd.CommandText = @"SELECT Id, FirstName, LastName, Phone,NationalCode, Description, DelayCount from tblMembers 
                                 ORDER BY Id DESC";
 
             
